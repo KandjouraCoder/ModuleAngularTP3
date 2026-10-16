@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.col {
+  padding: .4em 1.3em;
+}
+
+.color-dark {
+  background: #2885C4;
+}
+
+.color-light {
+  background: #57B3F1;
+}
+
+input.txt {
+  border: 0;
+  padding: 1em;
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+input.btn {
+  border: 0;
+  display: block;
+  padding: 1em;
+  background: rgb(235, 25, 107);
+  color: rgb(225, 255, 247);
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.life-container {
+  background: #3B98D9;
+  padding: .5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.animation-ajout {
+  animation: slide-fade 1s;
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+    background-color: #61b15a; // Couleur verdâtre au départ lors de l'ajout
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 0.8;
+    background-color: #2ec1ac; // Nuance intermédiaire
+  }
+  100% {
+    opacity: 1;
+    background-color: #3B98D9; // Couleur d'origine de .life-container
+    transform: translateY(0);
+  }
+}

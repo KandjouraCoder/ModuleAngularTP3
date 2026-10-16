@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+// Déclaration de la variable SCSS
+$main-color: #2E9CE6;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+html {
+  background: $main-color; /* Utilisation de la variable à la place de la valeur en dur */
+  padding: 1rem;
+  font-family: 'Raleway', 'Arial';
+  color: #fff;
+}
+
+/* Reste du fichier styles.scss... */
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+// html {
+//   background: #2E9CE6;
+//   padding: 1rem;
+//   font-family: 'Raleway', 'Arial';
+//   color: #fff;
+// }
+
+ul {
+  list-style-type: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+ul li a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+ul li a:hover {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

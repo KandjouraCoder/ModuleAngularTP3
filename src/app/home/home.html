@@ -1,0 +1,33 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>Un élément de liste</p>
+  </div>
+  <div class="col">
+    <p>Ma liste d'éléments (<span>{{ nbItems }}</span>)</p>
+  </div>
+</div>
+
+<div class="container color-light">
+  <div class="col">
+    <p class="life-container">Un élément de liste</p>
+    
+    <!-- Formulaire nettoyé (un seul déclenchement via ngSubmit) -->
+    <form (ngSubmit)="ajoutItem()">
+      <p>{{ objectifText }}</p>
+      <input type="text" placeholder="Entrez un élément" class="txt" name="item" [(ngModel)]="objectifText">
+      <input type="submit" class="btn" [value]="btnText">
+    </form>
+  </div>
+
+  <div class="col">
+  @for (element of activiteService.objectifs; track $index) {
+    <!-- Navigation dynamique vers /consultAct/index -->
+    <p class="life-container" 
+       [routerLink]="['/consultAct', $index]" 
+       style="cursor: pointer;" 
+       animate.enter="animation-ajout">
+      {{ element }}
+    </p>
+  }
+</div>
+</div>

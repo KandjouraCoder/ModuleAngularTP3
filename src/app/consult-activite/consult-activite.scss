@@ -1,0 +1,61 @@
+/* Style global de la page de consultation */
+h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+ol {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Zone de saisie lors de la modification */
+input[type="text"] {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Alignement des boutons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Style de base pour tous les boutons */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+/* Bouton Supprimer (Rouge) */
+.btn-danger {
+  background-color: #e74c3c;
+}
+
+/* Boutons Modifier / Sauvegarder (Bleu) */
+.btn-primary {
+  background-color: #3498db;
+}
+
+/* Bouton Retour (Vert) */
+.btn-secondary {
+  background-color: #2ecc71;
+}

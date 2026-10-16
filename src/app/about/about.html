@@ -1,0 +1,8 @@
+<p>about works!</p>
+
+<!-- Affichage de la liste sous forme d'items numérotés -->
+<ol>
+  @for (item of activiteService.objectifs; track $index) {
+    <li>{{ item }}</li>
+  }
+</ol>
